@@ -1,11 +1,11 @@
-<prism:PrismApplication xmlns="https://github.com/avaloniaui"
+﻿<prism:PrismApplication xmlns="https://github.com/avaloniaui"
                         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                         xmlns:local="using:SampleApp"
                         xmlns:prism="http://prismlibrary.com/"
                         x:Class="SampleApp.App">
 
   <prism:PrismApplication.Styles>
-    <FluentTheme Mode="Light" />
+    <FluentTheme />
     <!--<FluentTheme Mode="Dark" />-->
   </prism:PrismApplication.Styles>
 </prism:PrismApplication>

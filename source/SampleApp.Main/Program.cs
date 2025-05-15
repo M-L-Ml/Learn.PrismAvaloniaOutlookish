@@ -14,8 +14,8 @@ namespace SampleApp
         UseDBusMenu = true
       })
       .With(new Win32PlatformOptions {
-        EnableMultitouch = true,
-        AllowEglInitialization = true
+        //EnableMultitouch = true,
+        //AllowEglInitialization = true
       })
       .UseSkia()
       .UseReactiveUI()

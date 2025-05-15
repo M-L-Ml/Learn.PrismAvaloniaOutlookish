@@ -2,7 +2,7 @@
 using System.Collections.Specialized;
 using System.Linq;
 using Avalonia.Controls;
-using Prism.Regions;
+using Prism.Navigation.Regions;
 
 namespace SampleApp.Common;
 
@@ -58,9 +58,10 @@ public class TabControlAdapter : RegionAdapterBase<TabControl>
         foreach (UserControl item in e.NewItems)
         {
           var items = regionTarget.Items.Cast<TabItem>().ToList();
-          items.Add(new TabItem { Header = item.Tag, Content = item });
-          regionTarget.Items = items;           // Avalonia v0.10.x
-          //// regionTarget.Items.Set(items);   // Avalonia v11
+          // items.Add(new TabItem { Header = item.Tag, Content = item });
+          //  regionTarget.Items = items;           // Avalonia v0.10.x
+          // regionTarget.Items.Set(items);   // Avalonia v11
+          regionTarget.Items.Add(new TabItem { Header = item.Tag, Content = item });
         }
       }
       else if (e.Action == NotifyCollectionChangedAction.Remove)
@@ -71,8 +72,9 @@ public class TabControlAdapter : RegionAdapterBase<TabControl>
           // regionTarget.Items.Remove(tabToDelete);  // WPF
 
           var items = regionTarget.Items.Cast<TabItem>().ToList();
-          items.Remove(tabToDelete);
-          regionTarget.Items = items;
+          // items.Remove(tabToDelete);
+          regionTarget.Items.Remove(tabToDelete);
+          //   regionTarget.Items = items;
           //// regionTarget.Items.Set(items);   // Avalonia v11
         }
       }
