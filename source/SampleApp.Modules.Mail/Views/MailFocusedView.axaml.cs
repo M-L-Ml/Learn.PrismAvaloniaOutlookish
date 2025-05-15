@@ -11,7 +11,7 @@ public partial class MailFocusedView : UserControl
     InitializeComponent();
 
     // Programmatically bind the 'Items' property of the 'dd' ListBox to 'MailMessages'
-   
+  // dd.ItemTemplate
     //  dd.Bind(ItemsControl.ItemsSourceProperty, new Binding("MailMessages"));
     
   }
