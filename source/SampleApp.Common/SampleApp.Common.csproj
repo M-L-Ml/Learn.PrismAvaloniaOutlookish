@@ -3,7 +3,6 @@
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
     <BaseOutputPath>..\..\output</BaseOutputPath>
-    <LangVersion>11.0</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>
