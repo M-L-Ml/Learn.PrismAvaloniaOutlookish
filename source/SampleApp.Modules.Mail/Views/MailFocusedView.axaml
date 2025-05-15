@@ -9,25 +9,20 @@
              Tag="Focused"
              mc:Ignorable="d">
   <!-- ddd-->
-  <StackPanel >
-
-
-    <TextBlock Text="SampleApp.Modules.Mail.Views.MailFocusedView" />
-    <ListBox x:Name="dd" Margin="2"
-             ItemsSource="{Binding MailMessages}"
-             ScrollViewer.HorizontalScrollBarVisibility="Visible"
-             ScrollViewer.VerticalScrollBarVisibility="Visible"
-             SelectionMode="Single" >
-      <ListBox.ItemTemplate>
-        <DataTemplate>
-          <StackPanel Orientation="Horizontal" Spacing="5">
-            <TextBlock Text="From:" FontWeight="Bold" />
-            <TextBlock Text="{Binding From}" />
-            <TextBlock Text=" - " />
-            <TextBlock Text="{Binding Subject}" />
-          </StackPanel>
-        </DataTemplate>
-      </ListBox.ItemTemplate>
-    </ListBox>
-  </StackPanel>
+  <ListBox x:Name="dd" Margin="2"
+           ItemsSource="{Binding MailMessages}"
+           ScrollViewer.HorizontalScrollBarVisibility="Visible"
+           ScrollViewer.VerticalScrollBarVisibility="Visible"
+           SelectionMode="Single" >
+    <ListBox.ItemTemplate>
+      <DataTemplate>
+        <StackPanel Orientation="Horizontal" Spacing="5">
+          <TextBlock Text="From:" FontWeight="Bold" />
+          <TextBlock Text="{Binding From}" />
+          <TextBlock Text=" - " />
+          <TextBlock Text="{Binding Subject}" />
+        </StackPanel>
+      </DataTemplate>
+    </ListBox.ItemTemplate>
+  </ListBox>
 </UserControl>
