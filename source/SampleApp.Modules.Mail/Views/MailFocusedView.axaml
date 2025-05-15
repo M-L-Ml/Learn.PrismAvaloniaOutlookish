@@ -8,11 +8,13 @@
              d:DesignWidth="400"
              Tag="Focused"
              mc:Ignorable="d">
-  <ListBox Margin="2"
+  <!-- ddd-->
+
+  <ListBox x:Name="dd" Margin="2"
            ItemsSource="{Binding MailMessages}"
            ScrollViewer.HorizontalScrollBarVisibility="Visible"
            ScrollViewer.VerticalScrollBarVisibility="Visible"
-           SelectionMode="Single">
+           SelectionMode="Single" >
     <ListBox.DataTemplates>
       <DataTemplate>
         <StackPanel Orientation="Horizontal" Spacing="5">

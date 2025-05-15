@@ -14,6 +14,7 @@ public class MailFocusedViewModel : ViewModelBase, IActiveAware
 
   public MailFocusedViewModel(IMailService mailService)
   {
+    
     _mailService = mailService;
     MailMessages = new ObservableCollection<MailMessage>(_mailService.Messages);
   }
