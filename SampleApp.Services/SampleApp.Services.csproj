@@ -8,10 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Avalonia.Themes.Fluent" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\source\SampleApp.Common\SampleApp.Common.csproj" />
   </ItemGroup>
 
