@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ItemGroup>
+    <PackageVersion Include="Avalonia" Version="11.3.0" />
+    <PackageVersion Include="Avalonia.Desktop" Version="11.3.0" />
+    <PackageVersion Include="Avalonia.Diagnostics" Version="11.3.0" />
+    <PackageVersion Include="Avalonia.ReactiveUI" Version="11.3.0" />
+    <PackageVersion Include="Prism.Avalonia" Version="9.0.537.11130" />
+    <PackageVersion Include="Prism.DryIoc.Avalonia" Version="9.0.537.11130" />
+  </ItemGroup>
+</Project>
